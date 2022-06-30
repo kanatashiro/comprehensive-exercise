@@ -1,5 +1,7 @@
 package com.example.demo.domain;
 
+import java.time.LocalDateTime;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
@@ -8,7 +10,7 @@ public class Regist {
 	/**メールアドレス*/
 
 	private String user_email;
-	private String regist_date;
+	private LocalDateTime regist_date;
    private String unique_key;
    private int del_flg;
    {
@@ -16,6 +18,9 @@ public class Regist {
 }
    
    
+public void setRegist_date(LocalDateTime regist_date) {
+	this.regist_date = regist_date;
+}
 public int getDel_flg() {
 	return del_flg;
 }
@@ -28,11 +33,10 @@ public String getUser_email() {
 public void setUser_email(String user_email) {
 	this.user_email = user_email;
 }
-public String getRegist_date() {
+
+
+public LocalDateTime getRegist_date() {
 	return regist_date;
-}
-public void setRegist_date(String regist_date) {
-	this.regist_date = regist_date;
 }
 public String getUnique_key() {
 	return unique_key;

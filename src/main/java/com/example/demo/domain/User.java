@@ -8,6 +8,7 @@ public class User {
 	private String name;
 	/**ふりがな*/
 	private String ruby;
+	
 	private String mail_address;
 	/**郵便番号*/
 	private String zipcode;

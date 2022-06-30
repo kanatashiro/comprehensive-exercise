@@ -20,7 +20,7 @@ public class RegistService {
 	
 	
 	public void insert(Regist Address) {
-		registRepository.insert(Address);;
+		registRepository.insert(Address);
 		
 		
 	}
@@ -34,6 +34,9 @@ public class RegistService {
 		return  registRepository.findBykey(unique_key);
 	
 }
-
+	public void update(String user_email) {
+		registRepository.update(user_email);
 }
+}
+
 

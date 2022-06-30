@@ -82,7 +82,7 @@ try {
 	msg.setFrom("tourokukannryou@mail.com");
 	msg.setSubject("ユーザー登録用のURLの送付");
 	msg.setTo(form.getUser_email());
-	msg.setText("http://localhost:8080/touroku/?key=" + unique_key);
+	msg.setText("http://localhost:8080/touroku/aaa?key=" + unique_key);
 	mailSender.send(msg);
 	Regist regist = new Regist();
 	regist.setUnique_key(unique_key);
